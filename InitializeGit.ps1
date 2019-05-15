@@ -4,6 +4,7 @@ function New-Init {
     Set-Location $Path
 
     New-Item -Path $Path -Name ".gitignore" -ItemType "file"
+    Add-Content "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting\.gitignore" ""
     git.exe init 
     git.exe stage -A
     git.exe commit -am  "Initial Commit"
@@ -14,4 +15,4 @@ function New-Init {
     Write-Host "Completed."
 }
 
-New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTest" -Origin "git@github.com:PatrickBoyn/EFTesting.git"
+New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting" -Origin "git@github.com:PatrickBoyn/EFLearning.git"

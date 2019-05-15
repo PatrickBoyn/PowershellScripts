@@ -14,7 +14,13 @@ function New-Init {
     [Rr]elease/ 'n
     x64/ 'n
     [Bb]in/ 'n
-    [Oo]bj/
+    [Oo]bj/ `n
+    # NuGet Packages 'n
+    *.nupkg 'n
+    # The packages folder can be ignored because of Package Restore 'n
+    **/packages/* 'n
+    # except build/, which is used as an MSBuild target. 'n
+    !**/packages/build/ 'n
     "
     git.exe init 
     git.exe stage -A

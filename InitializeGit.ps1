@@ -13,6 +13,4 @@ function New-Init {
     Write-Host "Completed."
 }
 
-function 
-
 New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting" -Origin "git@github.com:PatrickBoyn/EFLearning.git"

@@ -88,6 +88,120 @@ function New-Init {
     DocProject/Help/*.hhp `n
     DocProject/Help/Html2 `n
     DocProject/Help/html `n
+    # Click-Once directory
+    publish/ `n 
+
+    # Publish Web Output `n
+    *.Publish.xml `n
+
+    # Windows Azure Build Output `n
+    csx `n
+    *.build.csdef `n
+
+    # Windows Store app package directory `n
+    AppPackages/ `n
+
+    # Others `n
+    *.Cache `n
+    ClientBin/ `n
+    [Ss]tyle[Cc]op.* `n
+    ~$* `n
+    *~ `n
+    *.dbmdl `n
+    *.[Pp]ublish.xml `n
+    *.pfx `n
+    *.publishsettings `n
+    modulesbin/ `n
+    tempbin/ `n
+
+    # EPiServer Site file (VPP) `n
+    AppData/ `n
+
+    # RIA/Silverlight projects `n
+    Generated_Code/ `n
+
+    # Backup & report files from converting an old project file to a newer `n
+    # Visual Studio version. Backup files are not needed, because we have git ;-) `n
+    _UpgradeReport_Files/ `n
+    Backup*/ `n
+    UpgradeLog*.XML `n
+    UpgradeLog*.htm `n
+
+    # vim `n
+    *.txt~ `n
+    *.swp `n
+    *.swo `n
+
+    # Temp files when opening LibreOffice on ubuntu `n
+    .~lock.* `n
+ 
+    # svn `n
+    .svn `n
+
+    # CVS - Source Control `n
+    **/CVS/ `n
+
+    # Remainings from resolving conflicts in Source Control `n
+    *.orig `n
+
+    # SQL Server files `n
+    **/App_Data/*.mdf `n
+    **/App_Data/*.ldf `n
+    **/App_Data/*.sdf `n
+
+
+    #LightSwitch generated files `n
+    GeneratedArtifacts/ `n
+    _Pvt_Extensions/ `n
+    ModelManifest.xml `n
+
+    # ========================= `n
+    # Windows detritus `n
+    # ========================= `n
+
+    # Windows image file caches `n
+    Thumbs.db `n
+    ehthumbs.db `n
+
+    # Folder config file `n
+    Desktop.ini `n
+
+    # Recycle Bin used on file shares `n
+    `$RECYCLE.BIN/ `n
+
+    # Mac desktop service store files `n
+    .DS_Store `n
+
+    # SASS Compiler cache `n
+    .sass-cache `n
+
+    # Visual Studio 2014 CTP `n
+    **/*.sln.ide `n
+
+    # Visual Studio temp something `n
+    .vs/ `n
+
+    # dotnet stuff `n
+    project.lock.json `n
+
+    # VS 2015+ `n
+    *.vc.vc.opendb `n
+    *.vc.db `n
+
+    # Rider `n
+    .idea/ `n
+
+    # Visual Studio Code `n
+    .vscode/ `n
+
+    # Output folder used by Webpack or other FE stuff `n
+    **/node_modules/* `n
+    **/wwwroot/* `n
+
+    # SpecFlow specific `n
+    *.feature.cs `n
+    *.feature.xlsx.* `n
+    *.Specs_*.html `n
     "
     git.exe init 
     git.exe stage -A

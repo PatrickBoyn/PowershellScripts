@@ -1,5 +1,5 @@
 function New-Init {
-    param ([String]$Path, [String]$Origin)
+    param ([String]$Path)
 
     Set-Location $Path
 
@@ -7,10 +7,8 @@ function New-Init {
     git.exe init 
     git.exe stage -A
     git.exe commit -am  "Initial Commit"
-    git.exe add origin $Origin
-    git.exe remote add origin $Origin
     explorer.exe $Path
     Write-Host "Completed."
 }
 
-New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting" -Origin "git@github.com:PatrickBoyn/EFLearning.git"
+New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting" 

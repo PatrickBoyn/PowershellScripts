@@ -11,4 +11,7 @@ function New-Init {
     git.exe remote add origin $Origin
     git.exe push -u origin master
     explorer.exe $Path
+    Write-Host "Completed."
 }
+
+New-Init

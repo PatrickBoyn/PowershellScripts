@@ -57,6 +57,15 @@ function New-Init {
     *.opensdf `n
     *.sdf `n
     *.cachefile `n
+    # Visual Studio profiler `n
+    *.psess `n
+    *.vsp `n
+    *.vspx `n
+    # Guidance Automation Toolkit `n
+    *.gpState `n
+    # ReSharper is a .NET coding add-in `n
+    _ReSharper*/ `n
+    *.[Rr]e[Ss]harper `n
     "
     git.exe init 
     git.exe stage -A

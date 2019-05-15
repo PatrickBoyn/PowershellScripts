@@ -1,5 +1,5 @@
 function New-Init {
-    param ([String]$Path='', [String]$Origin='')
+    param ([String]$Path, [String]$Origin)
 
     Set-Location $Path
 
@@ -14,4 +14,4 @@ function New-Init {
     Write-Host "Completed."
 }
 
-New-Init
+New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTest" -Origin "git@github.com:PatrickBoyn/EFTesting.git"

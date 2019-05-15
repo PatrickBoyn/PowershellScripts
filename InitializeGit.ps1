@@ -1,5 +1,5 @@
 function New-Init {
-    param ([String]$Path, [String]$Origin)
+    param ([String]$Path='', [String]$Origin='')
 
     Set-Location $Path
 

@@ -66,6 +66,28 @@ function New-Init {
     # ReSharper is a .NET coding add-in `n
     _ReSharper*/ `n
     *.[Rr]e[Ss]harper `n
+    # TeamCity is a build add-in `n
+    _TeamCity* `n
+
+    # DotCover is a Code Coverage Tool `n
+    *.dotCover `n
+
+    # NCrunch `n
+    *.ncrunch* `n
+    .*crunch*.local.xml `n
+
+    # Installshield output folder `n
+    [Ee]xpress/ `n
+
+    # DocProject is a documentation generator add-in `n
+    DocProject/buildhelp/ `n
+    DocProject/Help/*.HxT `n
+    DocProject/Help/*.HxC `n
+    DocProject/Help/*.hhc `n
+    DocProject/Help/*.hhk `n
+    DocProject/Help/*.hhp `n
+    DocProject/Help/Html2 `n
+    DocProject/Help/html `n
     "
     git.exe init 
     git.exe stage -A

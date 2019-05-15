@@ -8,8 +8,6 @@ function New-Init {
     git.exe stage -A
     git.exe commit -am  "Initial Commit"
     git.exe add origin $Origin
-    git.exe remote --v
-    git.exe status
     git.exe remote add origin $Origin
     git.exe push -u origin master
     explorer.exe $Path

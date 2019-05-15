@@ -4,8 +4,8 @@ function New-Init {
     Set-Location $Path
 
     New-Item -Path $Path -Name ".gitignore" -ItemType "file"
-    Add-Content "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting\.gitignore" "
-    # User-specific files `n
+    Add-Content "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting\.gitignore" 
+    "# User-specific files `n
     *.suo `n
     *.user `n
     *.sln.docstates `n

@@ -47,6 +47,16 @@ function New-Init {
     *.pidb `n
     *.log `n
     *.scc `n
+    # OS generated files # `n
+    .DS_Store* `n
+    Icon? `n
+    # Visual C++ cache files `n
+    ipch/ `n
+    *.aps `n
+    *.ncb `n
+    *.opensdf `n
+    *.sdf `n
+    *.cachefile `n
     "
     git.exe init 
     git.exe stage -A

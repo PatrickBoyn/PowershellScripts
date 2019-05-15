@@ -21,6 +21,32 @@ function New-Init {
     **/packages/* 'n
     # except build/, which is used as an MSBuild target. 'n
     !**/packages/build/ 'n
+    # MSTest test Results
+    [Tt]est[Rr]esult*/ `n
+    [Bb]uild[Ll]og.* `n
+    *_i.c `n
+    *_p.c `n
+    *.ilk `n
+    *.meta `n
+    *.obj `n
+    *.pch `n
+    *.pdb `n
+    *.pgc `n
+    *.pgd `n
+    *.rsp `n
+    *.sbr `n
+    *.tlb `n
+    *.tli `n
+    *.tlh `n
+    *.tmp `n
+    *.tmp_proj `n
+    *.log `n
+    *.vspscc `n
+    *.vssscc `n
+    .builds `n
+    *.pidb `n
+    *.log `n
+    *.scc `n
     "
     git.exe init 
     git.exe stage -A

@@ -1,4 +1,4 @@
-$TestValue = '@# User-specific files
+$GitIgnore = '@# User-specific files
 *.suo
 *.user
 *.sln.docstates
@@ -210,4 +210,4 @@ project.lock.json
 *.feature.xlsx.*
 *.Specs_*.html@'
 
-Add-Content .\.gitignore -Value $TestValue
+Add-Content .\.gitignore -Value $GitIgnore

@@ -1,12 +1,21 @@
 function New-Init {
-    param ([String]$Path)
+    [CmdletBinding()]
+    param (
+        [Parameter(Manditory=$true, ValueFromPipeline=$true)]
+        [String]$Path
+    )
 
-    Set-Location $Path
+    BEGIN {    
+        Set-Location $Path
 
-    New-Item -Path $Path -Name ".gitignore" -ItemType "file"
-    git.exe init 
-    git.exe stage -A
-    git.exe commit -am  "Initial Commit"
+        New-Item -Path $Path -Name ".gitignore" -ItemType "file"
+        git.exe init 
+        git.exe stage -A
+        git.exe commit -am  "Initial Commit"
 }
-
-New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting" 
+    PROCESS {}
+    END {
+        explorer.exe $Path
+        Write-Host "Finished."
+    }
+} 

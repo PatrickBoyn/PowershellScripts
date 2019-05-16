@@ -7,8 +7,6 @@ function New-Init {
     git.exe init 
     git.exe stage -A
     git.exe commit -am  "Initial Commit"
-    explorer.exe $Path
-    Write-Host "Completed."
 }
 
 New-Init -Path "C:\Users\dakil\Desktop\Repos\CSharp\ConsoleApps\EFTesting" 

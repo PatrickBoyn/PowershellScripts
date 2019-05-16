@@ -1,4 +1,7 @@
-$GitIgnore = '@# User-specific files
+function Add-IgnoreText {
+    param ()
+    BEGIN {
+        $GitIgnore = '@# User-specific files
 *.suo
 *.user
 *.sln.docstates
@@ -209,5 +212,12 @@ project.lock.json
 *.feature.cs
 *.feature.xlsx.*
 *.Specs_*.html@'
-
-Add-Content .\.gitignore -Value $GitIgnore
+    }
+    PROCESS {
+        Add-Content .\.gitignore -Value $GitIgnore
+    }
+    END {
+        Invoke-Item .\.gitignore
+        Write-Host "Finished."
+    }
+}

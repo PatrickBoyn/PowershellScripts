@@ -1,7 +1,7 @@
 function New-Init {
     [CmdletBinding()]
     param (
-        [Parameter(Manditory=$true, ValueFromPipeline=$true)]
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
         [String]$Path
     )
 
